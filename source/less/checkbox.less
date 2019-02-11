@@ -1,0 +1,61 @@
+.checkbox-label{
+	cursor: pointer;
+	position: relative;
+	transition: 0.2s;
+
+	&:before{
+		position: absolute;
+		content: "";
+		display: inline-block;
+		width: 40px;
+		height: 39px;
+		border: 2px solid #444;
+		background-color: transparent;
+		transition: 0.2s;
+	}
+
+	&:hover:before{
+		border-color: #62d1ba;
+
+	}
+
+
+	&:active:before{
+		border-color: #c7c7c7;
+		background-image: url(../images/SVG/icon-tick.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 22px 19px;
+
+		.checkbox-control:checked + &{
+			background-image: none;
+		}
+	}
+
+}
+
+.checkbox-control{
+	&:checked + .checkbox-label:before{
+		background-image: url(../images/SVG/icon-tick.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 22px 19px;
+	}
+}
+
+@media (min-width:@tablet)  {
+	.checkbox-label{
+		transition: 0.2s;
+
+		&:before{
+			width: 54px;
+			height: 52px;
+		}
+
+		&:after{
+			width: 20px;
+			height: 20px;
+		}
+	}	
+}
+
