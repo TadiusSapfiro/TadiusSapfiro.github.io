@@ -1,0 +1,64 @@
+.contact{
+	border: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+}
+
+.contact__input{
+	margin: 0;
+	width: 100%;
+	margin-top: 6px;
+	padding: 16px 0 16px 20px
+
+}
+
+.contact__phone{
+	margin-top: 32px;
+}
+
+.contact__info{
+  height: 112px;
+	margin-top: 32px;
+}
+
+@media (min-width:@tablet)  {
+
+	.contact{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contact__login{
+		width: 33.33%;
+	}
+
+	.contact__input{
+		margin-top: 35px;
+		padding: 26px 0 26px 20px
+
+	}
+
+	.contact__info{
+		margin-top: 35px;
+	  height: 211px;
+	}
+
+}
+
+@media (min-width:@desktop)  {
+	.contact__login{
+		width: 30.73%;
+	}
+
+	.contact__phone{
+		width: 48.12%;
+	}
+
+	.contact__email{
+		width: 48.12%;
+	}
+	
+}

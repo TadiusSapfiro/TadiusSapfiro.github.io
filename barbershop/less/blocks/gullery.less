@@ -1,0 +1,295 @@
+.gullery{
+	padding: 0 20px 62px 20px;
+	background-color: #f8f5f2;
+}
+
+.gullery__title{
+	margin: 0;
+	padding: 29px 0;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.gullery__btn{
+	display: none;
+}
+
+.gullery__blockquote{
+	margin: 0;
+	padding: 0 20px;
+}
+
+.gullery__item{
+	position: relative;
+	border: 1px solid #e5ddd5;
+	margin-bottom: 20px;
+
+	& picture{
+		height: -4px;
+		
+	}
+
+	& .gullery__img{
+		width: 280px;
+		height: auto;
+	}
+
+	&--work-of-month .gullery__img{
+		width: 280px;
+		height: auto;
+	}
+
+	&--work-of-month:before{
+		content: "Работа месяца";
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 400px;
+		width: 176px;
+		height: 50px;
+		background-color: #826550;
+		font-size: 20px;
+		line-height: 50px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
+.gullery__img{
+	position: relative;
+	// margin-bottom: 18px;
+	
+}
+
+.gullery__name{
+	font-size: 24px;
+	line-height: 27px;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.gullery__text{
+	margin-top: 14px;
+	margin-bottom: 16px;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.gullery__services-list{
+	padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.gullery__services-item{
+	position: relative;
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 27px;
+	padding-left:45px;
+	text-transform: uppercase;
+
+	&:nth-child(2n){
+		margin-left: 15px;
+	}
+	
+	&--haircut:before{
+		position: absolute;
+		left:10px;
+		top:3px;
+		content: "";
+		display: inline-block;
+		width: 21px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url(../images/scissors-icon.png);
+	}
+
+	&--beard:before{
+		position: absolute;
+		top:3px;
+		left:5px;
+		content: "";
+		display: inline-block;
+		width: 23px;
+		height: 21px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url(../images/beard-icon.png);
+	}
+
+	&--mustache:before{
+		position: absolute;
+		top:7px;
+		left:-10px;
+		content: "";
+		display: inline-block;
+		width: 45px;
+		height: 12px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url(../images/mustache.png);
+	}
+}
+
+@media (min-width:@tablet)  {
+	.gullery{
+		padding: 53px 65px 65px 65px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.gullery__title{
+		font-size: 40px;
+		padding: 10px 0;
+		margin-bottom: 38px;
+	}
+
+	.gullery__btn{
+		display: block;
+		padding: 12px 30px;
+	}
+
+
+	.gullery__item{
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 41px;
+
+		& .gullery__img{
+			width: 270px;
+			height: 294px;
+		}
+
+		&--work-of-month .gullery__img{
+			width: 270px;
+			height: 480px;
+		}
+
+		&--work-of-month:before{
+			left:-4px;
+			top: 34px;
+		}
+	}
+
+	.gullery__img{
+		margin-bottom: 0;
+		
+	}
+
+	.gullery__text{
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.gullery__description{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 40px 35px;
+		padding-bottom: 20px
+	}
+}
+
+@media (min-width:@desktop)  {
+	.gullery{
+	padding: 51px 120px 50px 120px;
+	}
+
+	.gullery__title{
+	font-size: 40px;
+	margin-bottom: 81px;
+	}
+
+	.gullery__btn{
+		padding: 12px 35px;
+	}
+
+	.gullery__list{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.gullery__item{
+		width: 295px;
+		flex-direction: column;
+		margin-bottom: 38px;
+
+		& .gullery__img{
+			width: 294px;
+			height: 294px;
+		}
+		
+		&--work-of-month:before{
+			left:782px;
+			top: 24px;
+		}
+
+		&--work-of-month{
+			width: 100%;
+			display: flex;
+			margin-bottom: 41px;
+			flex-direction: row;
+			justify-content: flex-start;
+
+			&:before{
+				left:782px;
+				top: 24px;
+			}
+
+			& .gullery__img{
+				width: 480px;
+				height: 480px;
+			}
+
+			& .gullery__description{
+				padding: 127px 80px 30px 40px;
+				height: auto;
+			}
+
+			& .gullery__img{
+				margin-bottom: 0px;
+			}
+
+			& .gullery__services-item{
+				margin-left: 30px;
+			}
+		}
+	}
+
+	.gullery__img{
+		margin-bottom: 0px;	
+	}
+
+	.gullery__services-list{
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	.gullery__description{
+		padding: 30px 35px;
+		padding-bottom: 17px;
+		height: 246px;
+	}
+
+	.gullery__text{
+		margin-top: 24px;
+		margin-bottom: 0px;
+	}
+
+	.gullery__blockquote{
+		padding: 0;
+	}
+}

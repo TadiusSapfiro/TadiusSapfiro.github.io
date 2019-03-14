@@ -1,0 +1,61 @@
+.discount{
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+.discount__text{
+	position: relative;
+	padding: 18px 0;
+	margin: 0;
+	padding-left: 110px;
+	font-size: 20px;
+	line-height: 27px;
+
+	&:before{
+		position: absolute;
+		left:25px;
+		content: "";
+		display: block;
+		width: 56px;
+		height: 56px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url(../images/clock-illustration.png);
+	}
+}
+
+@media (min-width:@tablet)  {
+
+	.discount__text{
+	padding: 41px 0;
+	padding-left: 185px;
+	font-size: 30px;
+	line-height: 27px;
+	text-transform: uppercase;
+	}
+}
+
+@media (min-width:@desktop)  {
+	
+	.discount{
+		margin: 0;
+		padding: 0;
+		width: 270px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.discount__text{
+		
+		padding: 200px 70px 10px 70px;
+		font-size: 20px;
+		text-transform: none;
+		text-align: center;
+
+		&:before{
+		left: 105px;
+		top: 70px;
+		transform: scale(2.5);
+		}
+	}
+	
+}

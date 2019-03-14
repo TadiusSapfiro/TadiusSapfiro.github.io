@@ -1,0 +1,91 @@
+.input{
+	background-color: #fff;
+	border: 1px solid #e5ddd5;
+	cursor: pointer;
+	outline: none;
+	resize: none;
+
+	&--login{
+		background-image: url(../../images/svg/login.svg);
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+
+	&--password{
+		background-image: url(../../images/svg/password.svg);
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+
+	&:hover{
+		border-color: #d5c9bd;
+	}
+
+	&:active{
+		border-color: #999999;
+	}
+
+	&::-webkit-input-placeholder{
+		font-family: "PT Sans Narrow", Arial, sans-serif;
+		font-weight: 400;
+		color: #000;
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	&:-ms-input-placeholder{
+		font-family: "PT Sans Narrow", Arial, sans-serif;
+		font-weight: 400;
+		color: #000;
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	&::-ms-input-placeholder{
+		font-family: "PT Sans Narrow", Arial, sans-serif;
+		font-weight: 400;
+		color: #000;
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	&::placeholder{
+		font-family: "PT Sans Narrow", Arial, sans-serif;
+		font-weight: 400;
+		color: #000;
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+
+@media (min-width:@tablet)  {
+
+	.input{
+
+	&::-webkit-input-placeholder{
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	&:-ms-input-placeholder{
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	&::-ms-input-placeholder{
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	&::placeholder{
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+}
+
+@media (min-width:@desktop)  {
+	
+	
+}

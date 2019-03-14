@@ -1,0 +1,123 @@
+.header{
+	position: relative;
+	
+	padding: 0;
+
+	
+	
+}
+
+.header__logo-link{
+	background-color: #242424;
+	height: 85px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__logo-img{
+	width: 226px;
+	height: auto;
+}
+
+
+
+.header__wrapper{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	width: auto;
+	min-width: 320px;
+	// margin: 0 auto;
+}
+
+@media (min-width:@tablet)  {
+	.header{
+		background-color: #000;
+	}
+
+	.header__wrapper{
+		width: auto;
+
+		// margin: 0 auto;
+	}
+
+
+
+	.header__logo-link{
+		order: 2;
+		width: 100%;
+		height: 397px;
+		align-items: flex-start;
+		
+		background-image: url(../images/back-tablet.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+
+		@media (min-resolution:@retina-dpi),(min-resolution:@retina-dppx)  {
+		background-image: url(../images/back-tablet2x.jpg);
+		background-size: 768px auto;
+
+		}
+	}
+
+	.inner-page .header__logo-link{
+		height: 215px;
+	}
+
+	.header__logo-img{
+		margin-top: 40px;
+		width: 370px;
+		height: auto;
+	}
+}
+
+@media (min-width:@desktop)  {
+	.header{
+		
+		background-color: #000;
+	}
+
+	.header__wrapper{
+		width: auto;
+		// margin: 0 auto;
+	}
+
+	.header__logo-link{
+		height: 649px;
+		
+		// background-image: url(../../images/back-desktop.jpg);
+		// background-repeat: no-repeat;
+		background-position: center 0;
+		background-size: cover;
+		
+		// @media (min-resolution:@retina-dpi),(min-resolution:@retina-dppx)  {
+		// background-image: url(../../images/back-desktop2x.jpg);
+		// background-size: 1200px auto;
+
+		// }
+	}
+
+	.inner-page .header__logo-link{
+		height: 308px;
+	}
+
+	.header__logo-img{
+		margin-top: 55px;
+		width: 370px;
+		height: auto;
+	}
+}
+

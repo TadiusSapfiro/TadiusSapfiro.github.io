@@ -1,0 +1,144 @@
+.beard-type{
+	border: none;
+	margin-top: 35px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	padding-bottom: 43px;
+}
+
+.beard-type__title{
+	display: block;
+	margin:  0 auto;
+	font-size: 20px;
+	line-height: 27px;
+	text-transform: uppercase;
+	margin-bottom: 38px;
+}
+
+.beard-type__container{
+	position: relative;
+	width: 33%;
+	display: flex;
+	flex-direction: column;	
+	margin-bottom: 115px;
+
+	&:after{
+		content: "";
+		position: absolute;
+		left:17px;
+		top:98px;
+		display: block;
+		width: 63px;
+		height: 104px;
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+
+	&--admiral:after{
+		
+		background-image: url(../images/beard-1.png);
+	}
+
+	&--lumberman:after{
+		
+		background-image: url(../images/beard-2.png);
+	}
+
+	&--polar-explorer:after{
+		
+		background-image: url(../images/beard-3.png);
+	}
+
+	&--boiarin:after{
+		
+		background-image: url(../images/beard-4.png);
+	}
+
+	&--wiseman:after{
+		
+		background-image: url(../images/beard-5.png);
+	}
+}
+
+.beard-type__label{
+	width: 100%;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.beard-type__text{
+	text-transform: lowercase;
+	display: block;
+	margin-top: 0px;
+	text-align: center;
+}
+
+@media (min-width:@tablet)  {
+	.beard-type{
+		margin-top: 53px;
+		border-top: 1px solid #e5ddd5;
+	}
+
+	.beard-type__title{
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 44px;
+		padding: 0 30px;
+	}
+
+	.beard-type__container{
+		width: 20%;
+		
+		&:after{
+			left:32px;
+			top:139px;
+		}
+	}
+
+	.beard-type__label{
+		font-size: 24px;
+		line-height: 24px;
+		margin-top: 26px;
+
+		&:after{
+			left: 55px;
+			top: 17px;
+		}
+	}
+
+	
+}
+
+@media (min-width:@desktop)  {
+	.beard-type{
+		margin-top: 68px;
+	}
+
+	.beard-type__label{
+
+		&:after{
+			left: 87px;
+			top: 17px;
+		}
+	}
+
+	.beard-type__title{
+		margin-bottom: 27px;
+		padding: 0 30px;
+	}
+
+	.beard-type__text{
+		margin-top: 24px;
+	}
+
+	.beard-type__container{
+
+		&:after{
+			left:64px;
+			top:162px;
+		}
+	}
+	
+}

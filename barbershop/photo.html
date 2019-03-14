@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Барбершоп "Бородинский"
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="JS/picturefill.js"></script>
+</head>
+	<body class="inner-page">
+	<header class="header">
+		<div class="header__wrapper">
+			<a href="#" class=" header__logo-link">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="images/logotype-desktop.png">
+					<source media="(min-width: 768px)" srcset="images/logotype-tablet.png">
+					<img class="header__logo-img" src="images/logotype-mobile.png" width="226"	height="30" alt="Логотип барбершопа Бородинский">
+				</picture>		
+			</a>
+		
+			<nav class="header__main-nav main-nav main-nav--closed main-nav--nojs">
+				
+				<div class="main-nav__wrapper">
+					<button class=" main-nav__btn main-nav__btn" type="button">Переключить меню </button>
+					<ul class="main-nav__site-nav site-nav">
+						<li class="site-nav__item ">
+							<a href="index.html" class="site-nav__link ">Главная</a>
+						</li>
+						<li class="site-nav__item">
+							<a href="photo.html" class="site-nav__link site-nav__link--active">Работы</a>
+						</li>
+						<li class="site-nav__item">
+							<a href="form.html" class="site-nav__link ">Записаться</a>
+						</li>
+							<li class="site-nav__item">
+								<a href="#" class="site-nav__link">Контакты</a>
+						</li>
+							<li class="site-nav__item">
+								<a href="#" class="site-nav__link">html academy</a>
+						</li>
+					</ul>
+					<ul class="main-nav__user-nav user-nav">
+						<li class="user-nav__item">
+							<a href="#" class="user-nav__link">Войти</a>
+							<svg class="user-nav__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"> 
+								<polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
+								<polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
+							</svg>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="main-photo">
+		<section class="main-photo__gullery gullery container">
+			<h2 class="gullery__title">Наши работы</h2>
+
+
+			<a href="#" class="gullery__btn button button--ghost">На главную</a>
+	
+			<ul class="gullery__list">
+				<li class="gullery__item gullery__item--work-of-month">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="images/photo-1-desktop.jpg 1x, images/photo-1-desktop2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="images/photo-1-tablet.jpg 1x, images/photo-1-tablet2x.jpg 2x">
+						<img class="gullery__img" src="images/photo-1-mobile.jpg" srcset="images/photo-1-mobile2x.jpg 2x" alt="Фото Лжепётра Мчиславского">
+					</picture>
+					
+					<div class="gullery__description">
+						<blockquote class="gullery__blockquote">
+							<cite class="gullery__name">Лжепётр Мчиславский</cite>
+							<p class="gullery__text">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+						</blockquote> 
+						<ul class="gullery__services-list">
+							<li class="gullery__services-item gullery__services-item--haircut">Стрижка</li>
+							<li class="gullery__services-item gullery__services-item--beard">Бритье</li>
+							<li class="gullery__services-item gullery__services-item--mustache">Усы</li>
+						</ul>
+					</div>
+				</li>
+				<li class="gullery__item">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="images/photo-2-desktop.jpg 1x, images/photo-2-desktop2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="images/photo-2-tablet.jpg 1x, images/photo-2-tablet2x.jpg 2x">
+						<img class="gullery__img" src="images/photo-2-mobile.jpg" srcset="images/photo-2-mobile2x.jpg" alt="Фото Саши Мальцева">
+					</picture>
+					<div class="gullery__description">
+						<blockquote class="gullery__blockquote">
+							<cite class="gullery__name">Саша Мальцев</cite>
+							<p class="gullery__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
+						</blockquote> 
+						<ul class="gullery__services-list">
+							<li class="gullery__services-item gullery__services-item--haircut">Стрижка</li>
+						</ul>
+					</div>
+				</li>
+				<li class="gullery__item">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="images/photo-3-desktop.jpg 1x, images/photo-3-desktop2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="images/photo-3-tablet.jpg 1x, images/photo-3-tablet2x.jpg 2x">
+						<img class="gullery__img" src="images/photo-3-mobile.jpg" srcset="images/photo-3-mobile2x.jpg" alt="Фото Владимира Иваныча">
+					</picture>
+					<div class="gullery__description">
+						<blockquote class="gullery__blockquote">
+						<cite class="gullery__name">Владимир Иваныч</cite>
+						<p class="gullery__text">К зимнему сезону — готов!</p>
+					</blockquote> 
+					<ul class="gullery__services-list">
+						<li class="gullery__services-item gullery__services-item--beard">Борода</li>
+						<li class="gullery__services-item gullery__services-item--mustache">Усы</li>
+					</ul>
+				</div>
+				</li>
+				<li class="gullery__item">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="images/photo-4-desktop.jpg 1x, images/photo-4-desktop2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="images/photo-4-tablet.jpg 1x, images/photo-4-tablet2x.jpg 2x">
+						<img class="gullery__img" src="images/photo-4-mobile.jpg" srcset="images/photo-4-mobile2x.jpg" alt="Фото Винстона Синего">
+					</picture>
+					<div class="gullery__description">
+						<blockquote class="gullery__blockquote">
+							<cite class="gullery__name">Винстон Синий</cite>
+							<p class="gullery__text">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+						</blockquote> 
+						<ul class="gullery__services-list">
+							<li class="gullery__services-item gullery__services-item--haircut">Стрижка</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="main-photo__price price container">
+			<h2 class="price__title">ПРЕЙСКУРАНТ</h2>
+			<div class="price__wrapper">
+				<table class="price__table">
+					<tr class="price__row">
+						<td class="price__cell price__cell--number">1</td>
+						<td class="price__cell price__cell--name">Классическая стрижка</td>
+						<td class="price__cell price__cell--bonus">
+				
+							<span class="price__bracket">(</span>
+							с мытьём головы
+							<span class="price__bracket">)</span>
+							
+						</td>
+						<td class="price__cell price__cell--price">1 500 руб.</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__cell price__cell--number">2</td>
+						<td class="price__cell price__cell--name">Современный вариант</td>
+						<td class="price__cell price__cell--bonus">
+				
+							<span class="price__bracket">(</span>
+							с мытьём головы
+							<span class="price__bracket">)</span>
+							
+						</td>
+						<td class="price__cell price__cell--price">1 500 руб.</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__cell price__cell--number">3</td>
+						<td class="price__cell price__cell--name">Индивидуальный подход</td>
+						<td class="price__cell price__cell--bonus">
+				
+							<span class="price__bracket">(</span>
+							с мытьём головы
+							<span class="price__bracket">)</span>
+							
+						</td>
+						<td class="price__cell price__cell--price">2 000 руб.</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__cell price__cell--number">4</td>
+						<td class="price__cell price__cell--name">Бритьё головы</td>
+						<td class="price__cell price__cell--bonus">
+				
+							<span class="price__bracket">(</span>
+							без мытья головы
+							<span class="price__bracket">)</span>
+							
+						</td>
+						<td class="price__cell price__cell--price">500 руб.</td>
+					</tr>
+					<tr class="price__row">
+						<td class="price__cell price__cell--number">5</td>
+						<td class="price__cell price__cell--name">Бритьё головы</td>
+						<td class="price__cell price__cell--bonus"> 
+				
+							<span class="price__bracket">(</span>с мытьём головы<span class="price__bracket">)</span></td>
+						<td class="price__cell price__cell--price">1 000 руб.</td>
+					</tr>
+				</table>
+				<section class="price__discount discount">
+					<h3 class="visually-hidden">Скидка</h3>
+					<p class="discount__text">C 10:00 до 14:00 скидка 20%</p>
+				</section>
+			</div>
+		</section>
+	</main>
+	<footer class="footer container">
+		<div class="contacts footer__contacts">
+			<b class="contacts__name">Барбершоп Бородинский</b>
+			<p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+			<div class="contacts__telephone-wrapper">
+				<span class="contacts__phone-tablet"> Тел:</span>
+				<a href="tel:+78125556666" class="contacts__telephone button button--black"> +7 (812) 555-66-66</a>
+			</div>
+		</div>
+		<section class="footer__social social">
+			<h2 class="social__title">Давайте дружить!</h2>
+			<ul class="social__list">
+				<li class="social__item">
+					<a href="#" class="social__link button button--black">
+							<img src="images/vk-icon-big.png" alt="Мы в ВКонтакте" class="social__network" width="23" height="26">
+					</a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link button button--black">
+							<img src="images/facebook-icon-big.png" alt="Мы в Фейсбуке" class="social__network" width="18" height="39">
+					</a>
+				</li>
+				<li class="social__item">
+					<a href="#" class="social__link button button--black">
+							<img src="images/insta-icon-big.png" alt="Мы в Инстаграме" class="social__network" width="36" height="36">
+					</a>
+				</li>
+			</ul>
+		</section>
+		<div class="footer__developers developers">
+			<h2 class="developers__title">Разработано:</h2>
+			<a href="#" class="developers__link button button--black">HTML ACADEMY</a>
+		</div>
+	</footer>
+<!-- 	<section class="modal modal-fail">
+		<h2 class="modal-fail__title">НЕУДАЧА</h2>
+		<p class="modal-fail__text">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
+		<button class="modal-fail__close-btn button">ОК</button>
+	</section>
+	<section class="modal modal-success">
+		<h2 class="modal-success__title">ЭТО УСПЕХ!</h2>
+		<p class="modal-success__text">Ваша заявка отправлена. Ожидайте, мы свяжемся с вами как только будет минутка.</p>
+		<button class="modal-success__close-btn button">ЗАКРЫТЬ ОКНО</button>
+	</section> -->
+	<script src="JS/script.js"></script>
+</body>
+</html>
