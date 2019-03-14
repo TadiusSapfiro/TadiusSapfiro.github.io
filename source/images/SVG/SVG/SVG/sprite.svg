@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="a"><feFlood flood-color="#91AA59" flood-opacity="1" result="floodOut"/><feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/><feBlend in="compOut" in2="SourceGraphic"/></filter></defs></svg>

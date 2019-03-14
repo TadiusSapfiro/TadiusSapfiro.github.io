@@ -1,0 +1,187 @@
+.about-us__title{
+	padding-left: 26px;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: 500;
+	opacity: 0.87;
+
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		left:0;
+		bottom:11px;
+		width: 16px;
+		height: 1px;
+		background-color: #000;
+	}
+}
+.about-us__contacts{
+	padding-left: 22px;
+}
+
+.about-us__adress,
+.about-us__mail,
+.about-us__telephone{
+	margin: 0;
+	font-size: 14px;
+	line-height: normal;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.about-us__mail .about-us__type{
+	margin-top: 11px;
+	margin-bottom: 3px;
+}
+
+.about-us__mail-link{
+ text-decoration: underline;
+}
+
+.about-us__type{
+	display: block;
+	margin-bottom: 7px;
+	margin-top: 19px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	cursor: auto;
+}
+
+.about-us__map{
+	display: block;
+	margin-top: 48px;
+	width: 320px;
+	height: 272px;
+	margin-left: -15px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/map-mobile.jpg);
+	background-size: 320px 272px;
+
+	@media (min-resolution: 144dpi),
+			 	 (min-resolution:1.5dppx){
+	background-image: url(../images/map-mobile2x.jpg);
+  }
+
+  & iframe{
+		width: 320px;
+		height: 272px;
+	}
+}
+
+
+@media (min-width:@tablet)  {
+
+	.about-us{
+		position: relative;
+	}
+
+	.about-us__contacts{
+		position: absolute;
+		padding: 0px 48px 37px 36px;
+		left: -11px;
+		background-color: #91aa59;
+		color: #fff;
+	}
+
+	.about-us__title{
+		margin-bottom: 26px;
+		padding-left: 50px;
+		font-size: 25px;
+		line-height: normal;
+
+		&:before{
+			position: absolute;
+			left:0;
+			bottom:13px;
+			width: 37px;
+			height: 2px;
+		}
+	}
+
+	.about-us__adress,
+	.about-us__telephone{
+		font-size: 16px;
+	}
+
+	.about-us__mail{
+		font-size: 16px;
+		cursor: pointer;
+
+		& .about-us__type{
+			margin-top: 30px;
+		}
+	}
+
+	.about-us__type{
+		margin-top: 30px;
+		font-size: 18px;
+	}
+
+	.about-us__map{
+		width: 764px;
+		height: 355px;
+		margin-top: 0;
+		margin-left: -60px;
+		background-image: url(../images/map-tablet.jpg);
+		background-size: 764px 355px;
+
+		@media (min-resolution: 144dpi),
+				 	 (min-resolution:1.5dppx){
+		background-image: url(../images/map-tablet2x.jpg);
+	  }
+
+	  & iframe{
+			width: 764px;
+			height: 355px;
+		}
+	}
+}
+
+@media (min-width:@desktop)  {
+	.about-us__title{
+		padding-left: 54px;
+		margin-bottom: 56px;
+		font-size: 48px;
+		line-height: normal;
+
+		&:before{
+			position: absolute;
+			left:0;
+			bottom:25px;
+			width: 37px;
+			height: 2px;
+		}
+	}
+
+	.about-us__contacts{
+		position: absolute;
+		padding: 30px 78px 67px 66px;
+		left: 0px;
+		background-color: #91aa59;
+		color: #fff;
+	}
+
+	.about-us__map{
+		width: 1366px;
+		height: 513px;
+		margin-left: -100px;
+		background-image: url(../images/map-desktop.jpg);
+		background-size: 1366px 513px;
+
+		@media (min-resolution: 144dpi),
+				 	 (min-resolution:1.5dppx){
+		background-image: url(../images/map-desktop2x.jpg);
+	  }
+
+	  & iframe{
+			width: 1366px;
+			height: 513px;
+		}
+	}
+}
+

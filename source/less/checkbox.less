@@ -1,31 +1,28 @@
 .checkbox-label{
 	cursor: pointer;
 	position: relative;
-	transition: 0.2s;
+	transition: 0.1s;
 
 	&:before{
 		position: absolute;
 		content: "";
 		display: inline-block;
-		width: 40px;
-		height: 39px;
-		border: 2px solid #444;
-		background-color: transparent;
-		transition: 0.2s;
+		width: 20px;
+		height: 20px;
+		background-color: #91aa59;
+		transition: 0.1s;
 	}
 
 	&:hover:before{
-		border-color: #62d1ba;
-
+		transform: scale(1.2);
 	}
 
 
 	&:active:before{
-		border-color: #c7c7c7;
-		background-image: url(../images/SVG/icon-tick.svg);
+		background-image: url(../images/SVG/check.svg);
 		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 22px 19px;
+		background-position: 3px 5px;
+		background-size: 15px 13px;
 
 		.checkbox-control:checked + &{
 			background-image: none;
@@ -36,26 +33,38 @@
 
 .checkbox-control{
 	&:checked + .checkbox-label:before{
-		background-image: url(../images/SVG/icon-tick.svg);
+		background-image: url(../images/SVG/check.svg);
 		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 22px 19px;
+		background-position: 3px 5px;
+		background-size: 15px 13px;
 	}
 }
 
-@media (min-width:@tablet)  {
+@media (min-width:@desktop)  {
 	.checkbox-label{
-		transition: 0.2s;
 
 		&:before{
-			width: 54px;
-			height: 52px;
+			width: 30px;
+			height: 30px;
 		}
 
-		&:after{
-			width: 20px;
-			height: 20px;
+		&:active:before{
+			background-image: url(../images/SVG/check.svg);
+			background-repeat: no-repeat;
+			background-position: 6px 8px;
+			background-size: 23px 21px;
+
+			.checkbox-control:checked + &{
+				background-image: none;
+			}
 		}
 	}	
+
+	.checkbox-control{
+	&:checked + .checkbox-label:before{
+		background-position: 6px 8px;
+		background-size: 23px 21px;
+	}
+}
 }
 

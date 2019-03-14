@@ -1,0 +1,58 @@
+.button{
+	padding: 11px 20px;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	background-color: transparent;
+	font-size: 14px;
+	line-height: normal;
+	font-weight: 400;
+	color: #fff;
+	outline: none;
+
+	&:hover,
+	&:focus{
+		transition-duration: 0.25s;
+		background-color: #fff;
+		color: #91aa59;
+	}
+
+	&:active{
+		transition-duration: 0.2s;
+		background-color: transparent;
+		color: #fff;
+		border-color: transparent;
+	}
+
+
+	&--green{
+		background-color: #91aa59;
+		border-radius: 30px;
+
+		&:hover,
+		&:focus{
+			border: 2px solid #91aa59;
+		}
+
+		&:active{
+			background-color: #91aa59;
+		}
+	}
+
+	
+}
+
+
+@media (min-width:@tablet)  {
+	.button{
+		padding: 16px 50px;
+		font-size: 14px;
+		border: 3px solid #fff;	
+
+		
+	}
+}
+
+@media (min-width:@desktop)  {
+	
+}
+
