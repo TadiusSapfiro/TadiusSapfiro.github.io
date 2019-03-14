@@ -1,5 +1,5 @@
 sourse/
 node_modules/
-gulpfile.js/
-package-lock.json/
-package.json/
+gulpfile.js
+package-lock.json
+package.json
