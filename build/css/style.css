@@ -66,6 +66,7 @@ a {
   max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 @media (max-width: 1230px) {
   .container {
@@ -306,6 +307,7 @@ a {
   background-image: url(../images/folio.png);
 }
 .images__paper-img {
+  overflow: hidden;
   position: relative;
   z-index: 2;
 }
@@ -372,6 +374,13 @@ a {
     left: 10px;
     z-index: 4;
     margin: 0 auto;
+  }
+  .images__paper:after {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    content: "";
+    top: 280px;
+    left: 0px;
   }
   .images__paper-img {
     width: 100%;
