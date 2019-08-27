@@ -311,6 +311,15 @@ a {
   z-index: 4;
   margin-left: auto;
 }
+.images__paper:after {
+  content: "";
+  position: absolute;
+  width: 539px;
+  height: 245px;
+  top: 600px;
+  left: 110px;
+  background-image: url(../images/folio.png);
+}
 .images__paper-img {
   overflow: hidden;
   position: relative;
