@@ -50,6 +50,10 @@ a {
   line-height: 48px;
   font-family: 'Roboto Slab', serif;
 }
+.title--s {
+  font-size: 42px;
+  line-height: 42px;
+}
 .italic {
   font-style: italic;
   font-family: "Georgia", serif;
@@ -80,6 +84,10 @@ a {
     font-size: 40px;
     line-height: 40px;
   }
+  .title--s {
+    font-size: 36px;
+    line-height: 36px;
+  }
   .m-text {
     font-size: 14px;
     line-height: 22px;
@@ -93,6 +101,10 @@ a {
   .title {
     font-size: 26px;
     line-height: 26px;
+  }
+  .title-- {
+    font-size: 22px;
+    line-height: 22px;
   }
   .m-text {
     font-size: 14px;
@@ -151,26 +163,15 @@ a {
   max-width: 275px;
   text-align: center;
 }
-.video__item:before {
-  content: "";
-  display: block;
-  width: 67px;
-  height: 67px;
-  top: 70px;
-  left: 105px;
-  position: absolute;
-  background-image: url(../images/video-icon.png);
-}
-.video__item:hover:before {
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.video__item:hover .video__img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .video__item:nth-of-type(1):after {
   content: "";
   display: block;
   position: absolute;
+  z-index: 5;
   width: 118px;
   height: 107px;
   top: -60px;
@@ -181,6 +182,7 @@ a {
   content: "";
   display: block;
   position: absolute;
+  z-index: 5;
   width: 102px;
   height: 39px;
   top: 160px;
@@ -218,6 +220,8 @@ a {
   }
 }
 .footer {
+  position: relative;
+  z-index: 9;
   padding: 15px 50px 20px 50px;
   background-color: #6adbd9;
 }
@@ -317,10 +321,24 @@ a {
   left: 110px;
   background-image: url(../images/folio.png);
 }
+.images__paper:after {
+  content: url();
+}
 .images__paper-img {
   overflow: hidden;
   position: relative;
   z-index: 2;
+}
+#arrow {
+  position: absolute;
+  fill: #199C68;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 200px;
+  height: 100px;
+  bottom: 100px;
+  left: 160px;
+  z-index: 10;
 }
 @media (max-width: 1230px) {
   .images__folder {
@@ -368,6 +386,12 @@ a {
   .images__paper-img {
     width: 100%;
   }
+  #arrow {
+    width: 170px;
+    height: 80px;
+    bottom: 60px;
+    left: 105px;
+  }
 }
 @media (max-width: 520px) {
   .images__folder {
@@ -403,9 +427,17 @@ a {
   .images__paper-img {
     width: 100%;
   }
+  #arrow {
+    width: 140px;
+    height: 55px;
+    bottom: 40px;
+    left: 73px;
+  }
 }
 .feedback {
   position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .feedback__vidjet {
   width: 330px;
@@ -464,6 +496,12 @@ a {
   line-height: 30px;
   font-weight: 700;
 }
+@media (max-width: 1399px) {
+  .feedback {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
 @media (max-width: 1230px) {
   .feedback {
     -webkit-transform: scale(0.7);
@@ -480,7 +518,7 @@ a {
   .feedback__vidjet {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-    top: 30px;
+    top: 60px;
     right: 50px;
   }
   .feedback__title {
@@ -506,12 +544,16 @@ a {
   .feedback__descr {
     display: none;
   }
+  .feedback__vidjet {
+    top: 60px;
+    right: 45px;
+  }
 }
 @media (max-width: 424px) {
   .feedback__vidjet {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    top: -35px;
+    top: 5px;
     right: -5px;
   }
 }
@@ -520,6 +562,8 @@ a {
   margin-top: 312px;
   max-width: 520px;
   padding-bottom: 308px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .autor__title {
   margin-bottom: 33px;
@@ -592,8 +636,22 @@ a {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
+@media (max-width: 1399px) {
+  .autor {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: 180px;
+    padding-bottom: 193px;
+  }
+  .autor__promo {
+    left: 345px;
+  }
+}
 @media (max-width: 1230px) {
   .autor {
+    position: relative;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     margin-top: 100px;
     max-width: 350px;
     padding-bottom: 110px;
