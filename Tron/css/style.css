@@ -440,7 +440,7 @@ a {
   margin: 0 4px;
 }
 .slide:before {
-  content: url(../images/SVG/st);
+  content: '*';
   display: block;
   position: absolute;
   left: 50%;
@@ -470,4 +470,166 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.tabs {
+  background-color: #171a2b;
+}
+.tabs__nav {
+  padding: 0px 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #25283c;
+}
+.tabs__nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 33%;
+  border-right: 1px solid #25283c;
+}
+.tabs__nav-item:last-child {
+  border-right: 0;
+}
+.tabs__nav-item a {
+  width: 100%;
+  height: 68px;
+  padding: 15px;
+  text-shadow: 0 2px 0 #0c0e1c;
+  font-size: 17px;
+  vertical-align: middle;
+  color: #93949d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tabs__nav-item .active {
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 0 0 #0c0e1c;
+          box-shadow: 0 5px 0 0 #0c0e1c;
+  border: solid 1px rgba(238, 232, 232, 0.07);
+  background-color: #25283c;
+  color: #fff;
+  -webkit-text-stroke: 1px #0c0e1c;
+}
+.champions {
+  padding-bottom: 23px;
+  margin-bottom: 13px;
+}
+.champions__list {
+  padding: 23px 13px 0 13px;
+}
+.champions__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #25283c;
+}
+.champions__item:nth-of-type(1) .champions__position {
+  border: solid 4px rgba(12, 14, 28, 0.3);
+  background-image: linear-gradient(42deg, #f87e35, #fdc01c 34%, #fdd668 55%, #f4aa0d 77%, #ffe88a);
+}
+.champions__item:nth-of-type(2) .champions__position {
+  border: solid 4px rgba(12, 14, 28, 0.3);
+  background-image: linear-gradient(42deg, #ffffff, #b0ada6 26%, #fffbef 55%, #dcd8cf 76%, #ffffff);
+}
+.champions__item:nth-of-type(3) .champions__position {
+  border: solid 4px rgba(12, 14, 28, 0.3);
+  background-image: linear-gradient(42deg, #c27843, #765037 26%, #ab8a5b 55%, #866238 76%, #4f301b);
+}
+.champions__position {
+  position: relative;
+  top: -3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: solid 4px #34384b;
+  border-radius: 50%;
+  background-color: #25283c;
+  text-shadow: 0 2px 0 #0c0e1c;
+  -webkit-text-stroke: 1px #0c0e1c;
+  font-size: 28px;
+  color: #fff9e7;
+}
+.champions__name {
+  text-shadow: 0 2px 0 #0c0e1c;
+  -webkit-text-stroke: 1px #0c0e1c;
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.champions__score {
+  position: relative;
+  margin-left: auto;
+  padding-right: 35px;
+  text-shadow: 0 2px 0 #0c0e1c;
+  -webkit-text-stroke: 1px #0c0e1c;
+  font-size: 15px;
+  color: #ffffff;
+}
+.champions__score:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width: 15px;
+  height: 16px;
+  background-image: url(../images/SVG/rectangle.svg);
+  background-size: cover;
+}
+.champions__open {
+  display: block;
+  position: relative;
+  left: -8px;
+  width: 14px;
+  height: 7px;
+  background-image: url(../images/SVG/arrow.svg);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.champions__place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  background-color: #25283c;
+  text-shadow: 0 2px 0 #0c0e1c;
+  -webkit-text-stroke: 1px #0c0e1c;
+  font-size: 18px;
+  color: #ffffff;
 }
