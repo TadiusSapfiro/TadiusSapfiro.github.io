@@ -1,16 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="28" viewBox="0 0 24 28">
-    <defs>
-        <circle id="b" cx="12" cy="20" r="12"/>
-        <filter id="a" width="116.7%" height="133.3%" x="-8.3%" y="-8.3%" filterUnits="objectBoundingBox">
-            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feMorphology in="SourceAlpha" radius="6" result="shadowInner"/>
-            <feOffset dy="4" in="shadowInner" result="shadowInner"/>
-            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
-            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.0470588235 0 0 0 0 0.0549019608 0 0 0 0 0.109803922 0 0 0 1 0"/>
-        </filter>
-    </defs>
-    <g fill="none" fill-rule="evenodd" transform="translate(0 -8)">
-        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
-        <circle cx="12" cy="20" r="9" stroke="#2572AD" stroke-linejoin="square" stroke-width="6"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27">
+    <g fill="none" fill-rule="evenodd" stroke-width="6">
+        <circle cx="12" cy="15" r="9" stroke="#0C0E1C"/>
+        <circle cx="12" cy="12" r="9" stroke="#2572AD"/>
     </g>
 </svg>
