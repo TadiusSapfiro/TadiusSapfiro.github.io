@@ -13,6 +13,10 @@
 
 </head>
 	<style>
+		.dn{
+			display: none;
+		}
+
 		img{
 			display: none;
 		}
@@ -21,14 +25,21 @@
 			display: block;
 		}
 
+		.btn{
+			position: absolute;
+			opacity: 0.3;
+			bottom: 10px;
+			right: 10px;
+		}
+
   </style>
 <body>
 <svg style="display: none"> 
 
 </svg>
 
-<header class="header">
-	<h1 style >Поздравляю тебя, цвети и процветай, забирай Катин подарок. Надеюсь тебе понравится то, что внутри)</h1>
+<header class="header dn">
+	<h1 class="text" style >Поздравляю тебя, цвети и процветай, забирай Катин подарок. Надеюсь тебе понравится то, что внутри)</h1>
 
 	<img src="img/5bda5261eca78aa2d47baf48c9d57dcd.jpg" alt="" >
 
@@ -39,9 +50,51 @@
 
 </main>
 <footer class="footer">
-
+	<span class="btn" style>Важный социальный опрос</span>
 </footer>
 </section>
-<script src="js/script.js" type="text/javascript"></script>
+<script>
+	'use strict'
+
+function onButtonClick() {
+
+	let score = 0;
+	let first = prompt('Вовчик - царь, а Тутов - днарь?','да/нет');
+	let second = prompt('Витька - лох, Жиляев - бох?','да/нет');
+	let thirt = prompt('Владимир - топ, Антипов - жоп?','да/нет');
+
+	if (first == 'да' || first == 'Да' ) {
+		score ++;
+	}
+
+	if (second == 'да' || second == 'да' ) {
+		score ++;
+	}
+
+	if (thirt == 'да' || thirt == 'Да' ) {
+		score ++;
+	}
+
+	alert(`Конгратулатионс, ты набрал ${score} из 3 баллов`);
+	if (score === 3) {
+		document.querySelector('.header').classList.toggle('dn');
+	}
+
+	if (score < 3) {
+		alert(`Но этого не достаточно`);
+	}
+
+
+}
+
+document.querySelector('.btn').addEventListener('click', function (evt) {
+	onButtonClick();
+})
+
+	
+	
+
+
+</script>
 </body>
 </html>
