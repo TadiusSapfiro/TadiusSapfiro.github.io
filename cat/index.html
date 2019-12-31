@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta   name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<meta name="description" content="">
+	<meta name="Keywords" content=""> 
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="images/.png">
+	<title>
+		От таинственного незнакомца
+	</title>
+
+</head>
+	<style>
+		body{
+			background-color: #f0f0f0;
+		}
+		.dn{
+			display: none;
+		}
+
+		.header{
+			transform: translateX(-1000px);
+			margin-top: 15px;
+			transition-duration: 0.5s;
+			display: flex;
+
+
+		}
+
+		.header--hovered{
+			transform: translateX(0px);
+			transition-duration: 0.3s;
+		}
+
+
+
+
+		.text{
+			padding-left: 15px;
+			font-weight: 400;
+			font-size: 20px;
+
+			color: #444;
+		}
+
+		.start-btn{
+			position: fixed;
+			opacity: 0.16;
+			top: 86%;
+			left: 76%;
+			cursor: pointer;
+		}
+
+		.alert{
+			font-weight: 400;
+			font-size: 24px;
+			color: #444;
+			opacity: 0.7;
+		}
+
+		.note{
+			top: 10px;
+			left: 50%;
+			margin-left: -225px;
+			width: 450px;
+			height: 85vh;
+			position: absolute;
+			background-image: url(img/paper.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.poem{
+			font-size: 19px;
+			padding-top: 60px;
+			padding-left: 40px;
+			font-style: italic;
+			color: maroon;
+		}
+
+		.key{
+			font-size: 14px;
+			padding-top: 220px;
+			padding-left: 40px;
+			font-style: italic;
+			color: maroon;
+		}
+
+
+
+  </style>
+<body>
+<svg style="display: none">
+
+</svg>
+<div class="dialog">
+	<div class="header ">
+		<img class="img" src="img/stranger.jfif" width="90" height="auto" alt="" >
+		<h1 class="text" style >Это же я, узнали меня? </h1>
+	</div>
+
+	<div class="header ">
+		<img class="img" src="img/stranger.jfif" width="90" height="auto" alt="" >
+		<h1 class="text" style >Я знал, что мы еще встретимся</h1>
+	</div>
+
+	<div class="header ">
+		<img class="img" src="img/stranger.jfif" width="90" height="auto" alt="" >
+		<h1 class="text" style >О нет, он за мной следит. Быстрее, мне нужно вам кое что передать</h1>
+	</div>
+
+	<div class="header ">
+		<img class="img" src="img/stranger.jfif" width="90" height="auto" alt="" >
+		<h1 class="text" style >Вот, пришлось немного зашифровать, ну знаете, чтобы 'он' не понял. Думаю вы разберетесь</h1>
+	</div>
+</div>
+
+
+<main class="main">
+	<p class="alert"> - Вы словно в тумане, ничего не видно</p>
+	<p class="alert"> - Странное место</p>
+	<p class="start-btn">какой то человек машет вам вдалеке</p>
+	<div class="note dn">
+		<p class="poem">
+			Я подарить тебе сумею душу,<br>
+			Ты лишь ее прошу я, береги,<br>
+			И твой покой вовеки не нарушу,<br>
+			Мою любовь, как дар молю прими.<br>
+
+			Ты счастье, может ты везенье,<br>
+			Ты точно радость, ты тепло,<br>
+			С тобой я обретаю вдохновенье,<br>
+			С тобой мне очень сильно повезло.<br>
+
+			Ты крылья даришь мне и нежность,<br>
+			С тобой могу я мир весь покорить,<br>
+			Тебя люблю я очень, обожаю,<br>
+			И без тебя пустынной кажется мне жизнь.<br>
+		</p>
+
+		<p class="key">
+			  1 2 1|
+			  11 5 3|
+			  7 5 2|
+			  7 2 3|
+			  1 5 2|
+			  4 2 3|
+			  2 2 1|
+			  3 1 1|
+			  12 5 1|
+			  5 3 2|
+			  8 3 1
+		</p>
+	</div>
+</main>
+<footer class="footer">
+</footer>
+<script>
+	'use strict';
+	let headers  = document.querySelectorAll('.header');
+function dialog(index) {
+
+	headers[index].classList.add('header--hovered');
+}
+
+function endOfDialog() {
+	let confirmQ = confirm('Незнакомец что-то сунул вам в руку, быстро отвернулся и зашагал в туман. Окликнуть его?');
+
+	if (confirmQ){
+		alert('Он замер на секунду... и скрылся во мгле');
+		document.querySelector('.dialog').classList.add('dn');
+		alert('Немного постояв озадаченно и непонимающе вы наконец открыли руку и посмотрели что вам сунул странный незнакомец');
+		document.querySelector('.note').classList.remove('dn');
+		document.querySelector('body').style.backgroundColor = "white";
+	}
+
+	if (!confirmQ){
+		document.querySelector('.dialog').classList.add('dn');
+		alert('Немного постояв озадаченно и непонимающе вы наконец открыли руку и посмотрели что вам сунул странный незнакомец');
+		document.querySelector('.note').classList.remove('dn');
+		document.querySelector('body').style.backgroundColor = "white";
+	}
+
+
+}
+function onButtonClick() {
+	document.querySelector('.start-btn').classList.add('dn');
+	let alerts = document.querySelectorAll('.alert');
+	for (let alert of alerts){
+		alert.classList.add('dn')
+	}
+
+
+	for (let i = 0; i < headers.length; i++){
+		setTimeout( dialog, i*3000, `${i}`);
+		if(i === 3 ){
+
+		}
+	}
+
+	setTimeout( endOfDialog, 12000);
+}
+
+document.querySelector('.start-btn').addEventListener('click', function () {
+	onButtonClick();
+});
+
+
+
+
+
+</script>
+</body>
+</html>
